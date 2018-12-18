@@ -1,8 +1,16 @@
 # Gmapping with Hokuyo Lidar on Turtlebot
 
-###### This package stacks up necessary packeges to run gmapping on Hokuyo Lidar with Turtlebot. We have more or less followed instructions from [this tutorial](http://wiki.ros.org/turtlebot/Tutorials/indigo/Adding%20a%20lidar%20to%20the%20turtlebot%20using%20hector_models%20%28Hokuyo%20UTM-30LX%29). Though we are using urgnode as opposed to hokuyo node and connecting our Lidar through ethernet port, and not /dev/ttyACM0. So we have skipped a few instructions from the original tutorial or modified it to run with urg_node. This has been successfully tested on ros-indigo. This tutorial assumes that your laser scan in being published on /scan topic, if that is not the case, kindly remap it to /scan topic to get it to work.
+> This package stacks up necessary packeges to run gmapping on Hokuyo Lidar with Turtlebot. We have more or less followed instructions from [this tutorial](http://wiki.ros.org/turtlebot/Tutorials/indigo/Adding%20a%20lidar%20to%20the%20turtlebot%20using%20hector_models%20%28Hokuyo%20UTM-30LX%29). 
 
-# Installation and setup instruction
+> **Key differences** wrt the above tutorial are the following.
+> 1. We use `urg_node` instead of `hokuyo_node`
+> 2. Our laser scanner is `UTM20LX`, not `UTM30LX`.
+> 3. The laser is connected via _Ethernet_, not _USB_.
+
+> **IMPORTANT:** This package assumes that the laser scan is being published to the `/scan` topic. If this is not the case, ensure that the laser scan topic is remapped to `/scan`.
+
+
+## Installation and setup instruction
 
 ### Installing dependencies.  
 
@@ -41,7 +49,7 @@ If you get any errors at this point, you should try installing packeges and thei
 - Change ip address in line 92 and put your Lidar ip address. 
 - If you are connecting Lidar through USB, comment line 92 and uncomment line 93-94. 
  
-# Running Gmapping
+## Running Gmapping
 
 ##### Running basic turtlebot functionality
 Open the terminal and execute following commands to start basic turtlebot functionality
