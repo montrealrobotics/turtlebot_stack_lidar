@@ -29,7 +29,7 @@ $ catkin_make -DCMAKE_BUILD_TYPE=Release -j8
 
 ```sh
 $ cd ~/turtlebot_lidar/src
-$ git clone <---------->
+$ git clone https://github.com/montrealrobotics/turtlebot_stack_lidar.git
 $ cd ~/turtlebot_lidar
 $ catkin_make -DCMAKE_BUILD_TYPE=Release -j8
 ```
