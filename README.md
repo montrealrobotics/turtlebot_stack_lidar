@@ -15,9 +15,9 @@
 ### Install the dependencies
 
 ```sh
-$ sudo apt install ros-kinetic-turtlebot-msgs
-$ sudo apt install ros-kinetic-laser-proc
-$ sudo apt install ros-kinetic-urg-node
+$ sudo apt install ros-indigo-turtlebot-msgs
+$ sudo apt install ros-indigo-laser-proc
+$ sudo apt install ros-indigo-urg-node
 $ cd ~
 ```
 
