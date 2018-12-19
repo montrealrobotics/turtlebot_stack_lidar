@@ -50,7 +50,7 @@ If you get any errors at this point, you should try installing packeges and thei
 ```xml
 	<param name="ip_address" value="192.168.1.14"/>
 ```
-- If you are connected via USB, uncomment following lines in the code,
+- If you are connected via USB, uncomment following lines in launch file,
 ```xml
 	<param name="serial_port" value="/dev/ttyACM0"/>
    	<param name="serial_baud" value="115200"/> 
