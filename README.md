@@ -45,7 +45,7 @@ If you get any errors at this point, you should try installing packeges and thei
 
 ### Interface the LiDAR (Configure IP address, port number)
 
-- If you are connecting Lidar through ethernet, go to the following file. <font style="color:red">some `~/turtlebot_lidar/src/turtlebot_stack_lidar/turtlebot_bringup/launch/minimal_with_hokuyo.launch` text</font>   
+- If you are connecting Lidar through ethernet, go to the following file. <font style="color:red"> `~/turtlebot_lidar/src/turtlebot_stack_lidar/turtlebot_bringup/launch/minimal_with_hokuyo.launch` </font>   
 - Change ip address in the following line if you are connected through _ethernet_, 
 ```xml
 	<param name="ip_address" value="192.168.1.14"/>
