@@ -60,7 +60,6 @@ If you get any errors at this point, you should try installing packeges and thei
 ## Run Gmapping
 
 ### Run basic turtlebot functionalities
-Open the terminal and execute following commands to start basic turtlebot functionality
 ```sh
 $ cd ~/turtlebot_lidar
 $ source devel/setup.bash
@@ -69,7 +68,6 @@ $ roslaunch turtlebot_bringup minimal_with_hokuyo.launch 3d_sensor:=kinect
 ```
 
 ### Run gmapping with LiDAR
-Open another tab and execute following commands to run gmapping,
 ```sh
 $ cd ~/turtlebot_lidar
 $ source devel/setup.bash
@@ -78,20 +76,18 @@ $ roslaunch turtlebot_navigation gmapping_demo_hokuyo.launch 3d_sensor:=kinect
 ```
 
 ### Move the turtlebot around
-Open another tab and execute following commands to teleoperate the turtlebot using keyboard,
 ```sh
 $ cd ~/turtlebot_lidar
 $ source devel/setup.bash
 $ export TURTLEBOT_3D_SENSOR=kinect
 $ roslaunch turtlebot_teleop keyboard_teleop.launch
 ```
-- i to move ahead
-- j to turn left
-- l to turn right
-- , to move back
+- `i` to move ahead
+- `j` to turn left
+- `l` to turn right
+- `,` to move back
 
 ### Visualize the map
-Open another tab and execute following commands to see the map being constructed.
 ```sh
 $ cd ~/turtlebot_lidar
 $ source devel/setup.bash
