@@ -1,13 +1,13 @@
 # Gmapping with Hokuyo Lidar on Turtlebot
 
-> This package stacks up necessary packeges to run gmapping on Hokuyo Lidar with Turtlebot. We have more or less followed instructions from [this tutorial](http://wiki.ros.org/turtlebot/Tutorials/indigo/Adding%20a%20lidar%20to%20the%20turtlebot%20using%20hector_models%20%28Hokuyo%20UTM-30LX%29). 
+> This stack helps run gmapping on a Turtlebot equipped with a Hokuyo laser. To an extent, we followed [this tutorial](http://wiki.ros.org/turtlebot/Tutorials/indigo/Adding%20a%20lidar%20to%20the%20turtlebot%20using%20hector_models%20%28Hokuyo%20UTM-30LX%29). 
 
 > **Key differences** wrt the above tutorial are the following.
 > 1. We use `urg_node` instead of `hokuyo_node`
 > 2. Our laser scanner is `UTM20LX`, not `UTM30LX`.
 > 3. The laser is connected via _Ethernet_, not _USB_.
 
-> **IMPORTANT:** This package assumes that the laser scan is being published to the `/scan` topic. If this is not the case, ensure that the laser scan topic is remapped to `/scan`.
+> **IMPORTANT:** This package assumes that the laser scan is being published to the topic `/scan`. If this is not the case, ensure that the laser scan topic is remapped to `/scan`.
 
 
 ## Installation and setup instructions
