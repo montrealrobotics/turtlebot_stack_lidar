@@ -45,9 +45,18 @@ If you get any errors at this point, you should try installing packeges and thei
 
 ### Interface the LiDAR (Configure IP address, port number)
 
-- If you are connecting Lidar through ethernet, go to the following file. [~/turtlebot_lidar/src/turtlebot_stack_lidar/turtlebot_bringup/launch/minimal_with_hokuyo.launch](~/turtlebot_lidar/src/turtlebot_stack_lidar/turtlebot_bringup/launch/minimal_with_hokuyo.launch)  
-- Change ip address in line 92 and put your Lidar ip address. 
-- If you are connecting Lidar through USB, comment line 92 and uncomment line 93-94. 
+- If you are connecting Lidar through ethernet, go to the following file. <font style="color:red">some `~/turtlebot_lidar/src/turtlebot_stack_lidar/turtlebot_bringup/launch/minimal_with_hokuyo.launch` text</font>   
+- Change ip address in the following line if you are connected through _ethernet_, 
+```xml
+		<param name="ip_address" value="192.168.1.14"/>
+
+```
+- If you are connected via USB, uncomment following lines in the code,
+```xml
+		<param name="serial_port" value="/dev/ttyACM0"/>
+    	<param name="serial_baud" value="115200"/> 
+```
+
  
 ## Run Gmapping
 
